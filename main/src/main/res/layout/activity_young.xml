@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+<ImageView
+    android:layout_width="260dp"
+    android:layout_height="200dp"
+    android:src="@mipmap/icon_young_peitu"
+    android:scaleType="fitXY"
+    android:layout_gravity="center_horizontal"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/open_young_no"
+        android:layout_marginTop="30dp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp"
+    android:layout_marginStart="50dp"
+    android:layout_marginEnd="50dp">
+    
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_young_1"
+        android:layout_gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor2"
+        android:textSize="14sp"
+        android:text="@string/open_young_1"
+        android:layout_marginStart="7dp"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_young_2"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor2"
+            android:textSize="14sp"
+            android:text="@string/open_young_2"
+            android:layout_marginStart="7dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_young_3"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor2"
+            android:textSize="14sp"
+            android:text="@string/open_young_3"
+            android:layout_marginStart="7dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_open_young"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="@string/open_young"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/textview_border_circle9"/>
+
+    <TextView
+        android:id="@+id/change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/gray1"
+        android:textSize="15sp"
+        android:text="@string/pwd_change"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/textview_border_circle11"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

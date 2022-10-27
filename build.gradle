@@ -1,0 +1,45 @@
+apply from: "config.gradle"
+apply from: "dependencies.gradle"
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "http://mvn.mob.com/android"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.3'
+        classpath 'com.mob.sdk:MobSDK:2018.0319.1724'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url "http://mvn.mob.com/android"
+        }
+//        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        google()
+        jcenter()
+//        maven{
+//            url "https://dl.bintray.com/tencentqcloudterminal/maven"
+//        }
+
+//        jcenter(){ url 'http://jcenter.bintray.com/'}
+        maven { url "https://www.jitpack.io" }
+//        maven {
+//            url "https://maven.google.com"
+//        }
+//        maven{
+//            url "https://dl.bintray.com/tencentqcloudterminal/maven"
+//        }
+//        maven { url "https://jitpack.io" }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

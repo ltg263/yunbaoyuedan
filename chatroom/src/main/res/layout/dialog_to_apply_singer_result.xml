@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white_radius_17"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="50dp"
+        app:riv_oval="true"
+        android:id="@+id/avatar"
+        android:layout_marginTop="15dp"
+        tools:src="@mipmap/ic_launcher_sys_msg"
+        android:layout_height="50dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="知画"
+            android:layout_centerInParent="true"
+            android:textColor="@color/textColor"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_name"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_sex_group"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:background="@drawable/bg_sex_female"
+            android:gravity="center_vertical"
+            android:minWidth="30dp"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_name"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            app:layout_constraintBottom_toBottomOf="@+id/img_avator"
+            >
+            <ImageView
+                android:id="@+id/sex"
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                tools:src="@mipmap/icon_sex_female"
+                />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/textColor2"
+        android:textSize="14sp"
+        tools:text="申请上五号麦"
+        />
+
+    <View
+        style="@style/line2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/refuse"
+            android:textColor="#FF5B5B"
+            android:textSize="14sp"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray2"
+            />
+
+        <TextView
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/agree"
+            android:textColor="@color/global"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+</LinearLayout>

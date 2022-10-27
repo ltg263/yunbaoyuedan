@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="4.9dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/v_order"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/icon_flash_order"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/img_flash_order"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flash_order"
+            android:textColor="@color/textColor"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toRightOf="@+id/img_flash_order"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tv_tip1"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_tip2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_tip_1"
+            android:textColor="@color/gray1"
+            android:textSize="10sp"
+            android:id="@+id/tv_tip2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tip1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_tip1"
+            />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="18dp"
+            android:padding="1.5dp"
+            android:src="@mipmap/icon_arrow_right"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="14dp"
+            />
+    </android.support.constraint.ConstraintLayout>
+
+
+

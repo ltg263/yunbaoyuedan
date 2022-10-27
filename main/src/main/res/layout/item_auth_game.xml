@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunbao.common.custom.MyFrameLayout2
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="@color/white"
+    >
+
+    <com.yunbao.common.custom.SquareImageView
+        android:id="@+id/thumb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="17dp"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/status"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="17dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/textColor"
+        android:textSize="12sp"
+        />
+</com.yunbao.common.custom.MyFrameLayout2>

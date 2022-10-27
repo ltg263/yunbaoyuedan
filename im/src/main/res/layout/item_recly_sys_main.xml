@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/gray1"
+        android:textSize="13sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_msg_sys_main"
+            app:riv_oval="true"
+            />
+        <com.yunbao.im.custom.BubbleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/avatar"
+            android:layout_marginRight="75dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/avatar"
+            android:minHeight="40dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp"
+            android:paddingTop="7dp"
+            app:arrowHeight="5dp"
+            app:arrowPositionY="20dp"
+            app:arrowWidth="10dp"
+            app:bubbleBgColor="@color/white"
+            app:bubbleRadius="5dp"
+            android:clickable="false"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/textColor"
+                    android:textIsSelectable="true"
+                    android:text="老板正在找人陪玩，快来上麦抢单！"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    tools:text="技能：绝地求生"
+                    android:textColor="@color/gray1"
+                    android:textSize="13sp"
+                    android:id="@+id/tv_skill_name"
+                    android:gravity="center_vertical"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    tools:text="主持：哈哈哈"
+                    android:textColor="@color/gray1"
+                    android:textSize="13sp"
+                    android:id="@+id/tv_host"
+                    android:gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="进入聊天室"
+                    android:gravity="center"
+                    android:textColor="@color/global"
+                    android:textSize="13sp"
+                    android:id="@+id/btn_confirm"
+                    android:layout_gravity="right"
+                    />
+
+            </LinearLayout>
+
+
+        </com.yunbao.im.custom.BubbleLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

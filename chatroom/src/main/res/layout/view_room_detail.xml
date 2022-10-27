@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:id="@+id/vp_avatar"
+        >
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            tools:src="@mipmap/ic_launcher_sys_msg"
+            android:scaleType="centerCrop"
+            android:id="@+id/img_avator"
+            app:riv_corner_radius="8dp"
+            />
+
+        <TextView
+            tools:text="交友"
+            tools:background="@mipmap/icon_type_song"
+            style="@style/live_label_style"
+            android:id="@+id/tv_live_type"
+            />
+    </FrameLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="快来围观神豪大哥在线刷单啊啊啊啊啊啊啊啊啊"
+        android:textColor="@color/textColor"
+        android:textSize="15dp"
+        android:layout_marginRight="30dp"
+        android:maxLines="2"
+        android:layout_toRightOf="@+id/vp_avatar"
+        android:layout_marginLeft="17dp"
+        android:textStyle="bold"
+        android:layout_marginTop="1dp"
+        android:id="@+id/tv_title"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="ID:6758"
+        android:textColor="@color/gray1"
+        android:textSize="12dp"
+        android:id="@+id/tv_id"
+        android:layout_alignBottom="@+id/vp_avatar"
+        android:layout_alignLeft="@+id/tv_title"
+        android:layout_marginBottom="1dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/vp_avatar"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_above="@+id/btn_edit"
+            android:textColor="@color/gray1"
+            android:textSize="13dp"
+            android:background="@null"
+          />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:text="@string/edit_announcement"
+            android:gravity="center"
+            android:textColor="@color/global"
+            android:textSize="15dp"
+            android:id="@+id/btn_edit"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

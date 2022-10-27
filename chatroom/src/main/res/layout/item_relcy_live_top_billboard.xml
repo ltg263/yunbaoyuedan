@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemview"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_frame"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/icon_main_list_head_1" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_avator"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_alignBottom="@id/img_frame"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_frame"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/textColor"
+            android:textSize="15sp"
+            tools:text="123" />
+
+        <LinearLayout
+            android:id="@+id/ll_sex_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="1.5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/sex_group"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:gravity="center_vertical"
+                android:minWidth="30dp"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp">
+
+                <ImageView
+                    android:id="@+id/sex"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp" />
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/white"
+                    android:textSize="9dp"
+                    tools:text="12" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:adjustViewBounds="true" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_user_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_sex_level"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text="jkjdajk"
+            android:textColor="@color/gray1"
+            android:textSize="11dp" />
+    </RelativeLayout>
+</FrameLayout>
+
+
+
+
+
+
+

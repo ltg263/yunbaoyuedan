@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/home_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlEnableLoadMore="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<com.scwang.smartrefresh.layout.header.ClassicsHeader
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:srlTextFailed="@string/refresh_header_failed"
+    app:srlTextFinish="@string/refresh_header_finish"
+    app:srlTextLoading="@string/refresh_header_loading"
+    app:srlTextPulling="@string/refresh_header_pulling"
+    app:srlTextRefreshing="@string/refresh_header_refreshing"
+    app:srlTextRelease="@string/refresh_header_release"
+    app:srlTextUpdate="@string/refresh_header_update"
+    />
+
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:fadingEdge="none"
+        app:elevation="0dp"
+        app:layout_behavior="com.yunbao.common.custom.FixAppBarLayoutBehavior"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="42dp"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/banner_wrap"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:cardPreventCornerOverlap="true"
+                >
+
+            <com.youth.banner.Banner
+                android:layout_width="match_parent"
+                android:id="@+id/banner"
+                app:image_scale_type="center_crop"
+                android:layout_height="115dp" />
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@mipmap/paidandating"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_spatch"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:alpha="0.5"
+                    />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="20dp"
+                    android:alpha="0.5"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

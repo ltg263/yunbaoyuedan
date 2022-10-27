@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_avator"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="3dp"
+        app:riv_oval="true"
+        tools:src="@mipmap/ic_launcher_sys_msg" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ll_sex_group"
+        app:layout_constraintLeft_toRightOf="@+id/img_avator"
+        app:layout_constraintTop_toTopOf="@+id/img_avator"
+        tools:text="知画" />
+
+    <LinearLayout
+        android:id="@+id/ll_sex_group"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:background="@drawable/bg_sex_female"
+        android:gravity="center_vertical"
+        android:minWidth="30dp"
+        android:orientation="horizontal"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_avator"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name">
+
+        <ImageView
+            android:id="@+id/sex"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            tools:src="@mipmap/icon_sex_female" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="10"
+            android:textColor="@color/white"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_anchor_level"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="5dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/ll_sex_group"
+        app:layout_constraintLeft_toRightOf="@id/ll_sex_group"
+        />
+
+    <ImageView
+        android:id="@+id/iv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/ll_sex_group"
+        app:layout_constraintLeft_toRightOf="@id/iv_anchor_level"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_skill"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_color_f5_radius_13"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_avator"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_avator">
+
+        <TextView
+            android:id="@+id/tv_skill_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/gray1"
+            android:textSize="10sp"
+            tools:text="和平精英" />
+
+        <TextView
+            android:id="@+id/tv_skill_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="10sp"
+            tools:text="12币/小时" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingTop="8dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/textColor"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@+id/img_avator"
+        tools:text="啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reclyView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:minHeight="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"></android.support.v7.widget.RecyclerView>
+
+    <com.yunbao.common.custom.DrawableTextView
+        android:id="@+id/dt_location"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_color_f5_radius_13"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:maxWidth="200dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="3dp"
+        android:textColor="@color/gray1"
+        android:textSize="12sp"
+        app:dt_left_drawable="@mipmap/icon_dynamic_location"
+        app:dt_left_height="10dp"
+        app:dt_left_width="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reclyView"
+        tools:text="嘉华酒店" />
+
+    <TextView
+        android:id="@+id/tv_time_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/gray1"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toRightOf="@+id/dt_location"
+        app:layout_constraintTop_toBottomOf="@+id/reclyView"
+        app:layout_goneMarginLeft="0dp"
+        tools:text="北京 | 1小时前" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time_addr"
+        app:layout_goneMarginTop="20dp"
+        >
+
+        <com.yunbao.common.custom.DrawableTextView
+            android:id="@+id/dt_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:textColor="@color/gray1"
+            android:textSize="13sp"
+            app:dt_left_drawable="@mipmap/icon_dynamic_comment"
+            app:dt_left_height="19dp"
+            app:dt_left_width="19dp"
+            tools:text="0"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:id="@+id/vp_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/img_zan"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:src="@mipmap/zan_0" />
+
+            <TextView
+                android:id="@+id/tv_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray1"
+                android:textSize="13sp"
+                tools:text="223" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            />
+
+        <ImageView
+            android:id="@+id/btn_more"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_more_black"
+            android:tint="#c8c8c8"
+            />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

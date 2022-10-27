@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:paddingLeft="@dimen/default_padding"
+    android:paddingRight="@dimen/default_padding"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:riv_corner_radius="10dp"
+        tools:src="@mipmap/ic_launcher_sys_msg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/img_avatar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="和"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/sp_14"
+        android:id="@+id/tv_name"
+        app:layout_constraintLeft_toRightOf="@+id/img_avatar"
+        app:layout_constraintTop_toTopOf="@id/img_avatar"
+        app:layout_constraintBottom_toTopOf="@+id/tv_hint"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_sex_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_sex_female"
+        android:gravity="center_vertical"
+        android:minWidth="30dp"
+        android:orientation="horizontal"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_name"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+        android:layout_marginLeft="10dp"
+
+        >
+        <ImageView
+            android:id="@+id/sex"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            tools:src="@mipmap/icon_sex_female"
+            />
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="10"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            />
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="有打游戏的随时呼我"
+        android:textColor="#ffb5b5b5"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        app:layout_constraintBottom_toBottomOf="@id/img_avatar"
+        android:id="@+id/tv_hint"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bound_color_global_radius_20"
+        android:text="@string/remove"
+        android:gravity="center"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/btn_remove"
+        android:textColor="@color/global"
+        android:textSize="13sp"
+        />
+
+    <View android:background="@color/gray2"
+          android:layout_width="0dp"
+          android:layout_height="1px"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintLeft_toLeftOf="@+id/img_avator"
+          app:layout_constraintRight_toRightOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>

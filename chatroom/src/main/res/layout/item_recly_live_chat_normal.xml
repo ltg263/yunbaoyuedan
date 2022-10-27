@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:background="@color/black1"
+    android:padding="5dp"
+    android:layout_margin="1.5dp"
+    android:background="@drawable/bg_color_black_alpha_2_radius_10"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:text="123"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/sex_group"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:minWidth="30dp"
+        android:orientation="horizontal"
+        android:paddingLeft="4dp"
+        android:layout_toRightOf="@+id/tv_name"
+        android:paddingRight="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/sex"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            />
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/white"
+            android:textSize="9dp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_anchor_level"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/sex_group"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/iv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/iv_anchor_level"
+        />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:text="123"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_content"
+        android:layout_below="@+id/ll_top"
+        />
+
+</RelativeLayout>

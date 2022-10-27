@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.FlashOrderCancleActivity">
+    <include layout="@layout/view_title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="@string/order_cancel_reason"
+        android:textColor="@color/gray3"
+        android:textSize="13sp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/reclyView"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:id="@+id/tv_order_tip"
+        android:textColor="@color/red"
+        android:textSize="11sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        tools:text="每天仅有2次取消快速下单的机会，请谨慎操作"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/submit"
+        android:textColor="@color/global"
+        android:textSize="13sp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:id="@+id/tv_commit"
+        android:onClick="commit"
+        />
+
+</LinearLayout>

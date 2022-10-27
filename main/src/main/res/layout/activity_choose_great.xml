@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ChooseGreatActivity">
+    <include layout="@layout/view_title_right_image"/>
+
+    <TextView
+        tools:text="倒计时：1天08时48分22秒"
+        android:id="@+id/tv_count_down"
+        style="@style/top_text_view_tip_style" />
+
+    <com.yunbao.common.custom.refresh.RxRefreshView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refreshView"
+        ></com.yunbao.common.custom.refresh.RxRefreshView>
+
+</LinearLayout>

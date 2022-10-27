@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:textColor="@color/gray3"
+        android:textSize="13sp"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/default_margin"
+        android:background="@drawable/bound_gray_color_white_radius_10"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_soon_end"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:id="@+id/tv_title"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_end_tip"
+                android:textColor="#ff959393"
+                android:textSize="9sp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/tv_hint"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="@string/another_one"
+            android:textSize="14sp"
+            android:textColor="#E0FFFFFF"
+            android:gravity="center"
+            android:id="@+id/btn_again"
+            android:background="@drawable/bg_again_order"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bg_imageView"
+            />
+        <FrameLayout
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:id="@+id/vp_avator_bg"
+            android:layout_gravity="center"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                app:riv_oval="true"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:id="@+id/img_avatar"
+                tools:src="@mipmap/ic_launcher_sys_msg"
+                />
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        tools:text="楚霸王"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:id="@+id/tv_name"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        />
+
+</LinearLayout>

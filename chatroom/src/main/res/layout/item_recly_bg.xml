@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="130dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+    <ImageView
+        android:layout_width="117dp"
+        android:layout_height="160dp"
+        android:src="@mipmap/bg_live_room"
+        android:scaleType="centerCrop"
+        android:id="@+id/image"
+        />
+
+     <RadioButton
+         android:layout_width="40dp"
+         android:layout_height="20dp"
+         style="@style/default_chebox"
+         android:layout_marginTop="10dp"
+         android:id="@+id/chebox"
+         android:enabled="true"
+         android:text="@string/use"
+         />
+</LinearLayout>

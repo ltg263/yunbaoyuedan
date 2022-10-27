@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_bg_main_home_top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/btn_search"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_main_home_top_search_input">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/ic_bg_main_home_input"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="30dp"
+                        android:padding="8dp"
+                        android:src="@mipmap/ic_main_home_search"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="38dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/main_search_hint"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="13sp" />
+                </FrameLayout>
+
+                <com.yunbao.common.custom.DrawableTextView
+                    android:id="@+id/btn_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/global"
+                    android:textSize="15sp"
+                    android:translationY="3dp"
+                    app:dt_left_drawable="@mipmap/ic_main_home_filter"
+                    app:dt_left_height="18dp"
+                    app:dt_left_width="20dp" />
+
+                <ImageView
+                    android:id="@+id/btn_order"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@mipmap/ic_main_home_kuaisuxiadan" />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/ic_main_home_kuaisuxiadan"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/global"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="-1dp"
+                android:background="@drawable/textview_border_circle3"/>
+
+        </LinearLayout>
+
+
+
+
+        <com.yunbao.common.custom.MyViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

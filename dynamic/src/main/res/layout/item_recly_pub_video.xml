@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.yunbao.common.custom.SquareRoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:riv_corner_radius="8dp"
+        android:id="@+id/image_thumb"
+        android:transitionName="@string/transition_image"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@mipmap/icon_dynamic_video"
+        android:layout_gravity="center"
+
+        />
+
+</FrameLayout>

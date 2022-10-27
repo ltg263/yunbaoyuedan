@@ -1,0 +1,1 @@
+include ':app', ':im', ':mob', ':common', ':main', ':dynamic', ':video', ':silicompressor', ':chatroom', ':live', ':beauty', ':BaseRecyclerViewAdapterHelper'

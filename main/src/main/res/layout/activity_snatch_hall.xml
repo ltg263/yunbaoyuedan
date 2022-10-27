@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SnatchHallActivity">
+    <include layout="@layout/view_title"/>
+
+    <com.yunbao.common.custom.DrawableTextView
+        tools:text="@string/order_renewal_tip"
+        android:id="@+id/dt_count_down"
+        style="@style/top_text_view_tip_style"
+        app:dt_left_height="13dp"
+        app:dt_left_width="12dp"
+        android:drawablePadding="3dp"
+        android:visibility="gone"
+        app:dt_left_drawable="@mipmap/icon_small_horn"
+        />
+
+    <com.yunbao.common.custom.refresh.RxRefreshView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refreshView"
+        ></com.yunbao.common.custom.refresh.RxRefreshView>
+
+
+
+</LinearLayout>

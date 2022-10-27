@@ -1,0 +1,54 @@
+package com.yunbao.common.utils;
+
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.util.DisplayMetrics;
+
+import com.yunbao.common.CommonAppContext;
+import com.yunbao.common.R;
+
+import java.util.Locale;
+
+/**
+ * Created by cxf on 2017/10/10.
+ * 获取string.xml中的字
+ */
+
+public class WordUtil {
+
+    private static Resources sResources;
+
+    static {
+        sResources = CommonAppContext.sInstance.getResources();
+    }
+
+    public static String getString(int res,Object...obj) {
+        Locale appLocale = LanguageUtil.getLanguageLocale();
+        Locale locale = sResources.getConfiguration().locale;
+//        if (!appLocale.getLanguage().equals(locale.getLanguage())) {
+//            Configuration configuration = sResources.getConfiguration();
+//            configuration.setLocale(appLocale);
+//            DisplayMetrics dm = sResources.getDisplayMetrics();
+//            sResources.updateConfiguration(configuration, dm);//语言更换生效的代码!
+//        }
+        Configuration configuration = sResources.getConfiguration();
+        configuration.setLocale(appLocale);
+        DisplayMetrics dm = sResources.getDisplayMetrics();
+        sResources.updateConfiguration(configuration, dm);//语言更换生效的代码!
+        if(obj==null){
+            return sResources.getString(res);
+        }else{
+            return sResources.getString(res,obj);
+        }
+    }
+
+
+
+    public static String getString(int res){
+//      return   getString(res,"");
+        if(res==0){
+            return "";
+        }
+        return sResources.getString(res);
+    }
+}

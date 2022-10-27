@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:fadingEdge="none"
+            app:elevation="0dp"
+            app:layout_behavior="com.yunbao.common.custom.AppBarLayoutBehavior"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@color/white"
+                android:id="@+id/vp_app_container"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                >
+            </FrameLayout>
+        </android.support.design.widget.AppBarLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:orientation="vertical"
+            android:id="@+id/vp_container"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+            <include layout="@layout/item_user_detail_page"/>
+            <include layout="@layout/item_skill_detail_page" />
+        </LinearLayout>>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_bottom_height"
+        android:layout_gravity="bottom"
+        android:id="@+id/vp_tools"
+        android:background="@color/transparent"
+        ></FrameLayout>
+</FrameLayout>

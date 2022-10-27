@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        >
+        <FrameLayout
+            android:id="@+id/btn_search"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_home_search"
+            >
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:padding="8dp"
+                android:src="@mipmap/icon_main_search"
+                android:tint="@color/gray3"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/main_search_hint"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/gray3"
+                android:textSize="15sp"
+                />
+        </FrameLayout>
+
+        <com.yunbao.common.custom.DrawableTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:dt_left_drawable="@mipmap/icon_dynamic_publish"
+            app:dt_left_width="20dp"
+            app:dt_left_height="18dp"
+            android:drawablePadding="5dp"
+            android:textColor="@color/global"
+            android:text="@string/publish"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/btn_publish"
+            />
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/home_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadMore="false"
+        >
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlTextFailed="@string/refresh_header_failed"
+            app:srlTextFinish="@string/refresh_header_finish"
+            app:srlTextLoading="@string/refresh_header_loading"
+            app:srlTextPulling="@string/refresh_header_pulling"
+            app:srlTextRefreshing="@string/refresh_header_refreshing"
+            app:srlTextRelease="@string/refresh_header_release"
+            app:srlTextUpdate="@string/refresh_header_update"
+            />
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:fadingEdge="none"
+                app:elevation="0dp"
+                app:layout_behavior="com.yunbao.common.custom.FixAppBarLayoutBehavior"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="42dp"
+                    android:orientation="vertical"
+                    app:layout_scrollFlags="scroll"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView_class"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="13dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="10dp"
+                            android:nestedScrollingEnabled="false"
+                            />
+                    </RelativeLayout>
+                    <android.support.design.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="4.3dp"
+                        >
+                        <include layout="@layout/item_flash_order"/>
+                    </android.support.design.card.MaterialCardView>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="13dp"
+                        >
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/slide_left"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            app:riv_corner_radius="10dp"
+                            />
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/slide_right"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            app:riv_corner_radius="10dp"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.design.widget.AppBarLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/gray2"
+                    />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+                    <net.lucode.hackware.magicindicator.MagicIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_dressing"
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:padding="10dp"
+                        android:src="@mipmap/icon_dressing" />
+                </FrameLayout>
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    />
+
+            </LinearLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

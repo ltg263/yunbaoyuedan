@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="draw_layout_width" tools:ignore="MissingDefaultResource">270dp</dimen>
+    <dimen name="item_me_head_margin">140dp</dimen>
+
+
+</resources>

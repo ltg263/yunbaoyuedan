@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yunbao.main">
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.GameActivity"/>
+        <activity android:name=".activity.UserReportActivity" />
+        <activity android:name=".activity.BlackListActivity" />
+        <activity android:name=".activity.MyGiftProfitActivity" />
+        <activity android:name=".activity.RefundApplyActivity" />
+        <activity android:name=".activity.RefunDealActivity" /> <!-- <activity android:name=".activity.FeedbackActivity" /> -->
+        <activity
+            android:name=".activity.OrderTakingDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DidiOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FlashOrderCancleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FlashOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChooseGreatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SnatchHallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DripOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FootActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VisitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AlbumGalleryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RelatedSkillsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PublishDynamicsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AllSkillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FlashOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.LoginInvalidActivity"
+            android:theme="@style/dialog2" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FindPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FollowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyCoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyProfitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AllClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SkillUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SkillHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SetProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditInterestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditSignActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditJobActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditSchoolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditAddrActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditVoiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MySkillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChooseSkillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditSkillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderMakeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".activity.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderAccpetDetailActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderCancelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderMsgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderAccpetDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderCommentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activity.OrderCommentActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderCommentActivity3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LogoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LogoutWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InviteWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChoosePhoneCountryCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChatRoomMoreListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LiveClassActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.YoungActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PwdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:name=".activity.PwdInputActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:name=".activity.YoungOpenedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PwdChangeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+    </application>
+
+</manifest>

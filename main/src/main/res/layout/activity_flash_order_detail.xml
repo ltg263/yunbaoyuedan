@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.FlashOrderDetailActivity">
+    <include layout="@layout/view_title"/>
+    <com.yunbao.common.custom.ItemLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:leftTitle="@string/order_detail_skill"
+        android:id="@+id/vp_skill"
+        android:background="@color/white"
+        ></com.yunbao.common.custom.ItemLinearLayout>
+
+    <View style="@style/line3"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <com.yunbao.common.custom.ItemLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:leftTitle="@string/level"
+        android:id="@+id/vp_level"
+        android:background="@color/white"
+        ></com.yunbao.common.custom.ItemLinearLayout>
+    <View style="@style/line3"
+        android:layout_marginLeft="10dp"
+        />
+    <com.yunbao.common.custom.ItemLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:leftTitle="@string/sex"
+        android:background="@color/white"
+        android:id="@+id/vp_sex"
+        ></com.yunbao.common.custom.ItemLinearLayout>
+
+    <View style="@style/line3"
+        android:layout_marginLeft="10dp"
+        />
+    <com.yunbao.common.custom.ItemLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:leftTitle="@string/time"
+        android:background="@color/white"
+        android:id="@+id/vp_time"
+        ></com.yunbao.common.custom.ItemLinearLayout>
+
+    <View style="@style/line3"
+        android:layout_marginLeft="10dp"
+        />
+    <com.yunbao.common.custom.ItemLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:leftTitle="@string/order_number"
+        android:background="@color/white"
+        android:id="@+id/vp_order_num"
+        ></com.yunbao.common.custom.ItemLinearLayout>
+
+
+
+    <com.yunbao.common.custom.ItemLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:leftTitle="@string/order_des"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:id="@+id/vp_des"
+        ></com.yunbao.common.custom.ItemLinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        tools:text="请尽快选择大神，超时后订单将失效"
+        android:textColor="#ff969696"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:id="@+id/tv_state"
+        />
+
+
+</LinearLayout>

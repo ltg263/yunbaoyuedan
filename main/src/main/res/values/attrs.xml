@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="UploadImageView">
+        <attr name="uiv_src" format="reference"/>
+        <attr name="uiv_add_icon" format="reference"/>
+        <attr name="uiv_del_icon" format="reference"/>
+        <attr name="uiv_bg_color" format="color"/>
+        <attr name="uiv_add_size" format="dimension"/>
+        <attr name="uiv_del_size" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="TagGroup">
+        <attr name="tag_radius" format="dimension"/>
+        <attr name="tag_stroke_width" format="dimension"/>
+        <attr name="tag_text_size" format="dimension"/>
+        <attr name="tag_height" format="dimension"/>
+        <attr name="tag_padding" format="dimension"/>
+        <attr name="tag_margin" format="dimension"/>
+        <attr name="tag_count" format="integer"/>
+        <attr name="tag_color" format="color"/>
+        <attr name="tag_min_width" format="dimension"/>
+        <attr name="tag_has_border" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="StarCountView">
+        <attr name="scv_check_drawable" format="reference"/>
+        <attr name="scv_uncheck_drawable" format="reference"/>
+        <attr name="scv_drawable_size" format="dimension"/>
+        <attr name="scv_total_count" format="integer"/>
+        <attr name="scv_fill_count" format="integer"/>
+    </declare-styleable>
+</resources>

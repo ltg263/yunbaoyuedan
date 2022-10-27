@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RelatedSkillsActivity">
+    <include layout="@layout/view_title"/>
+
+    <com.yunbao.common.custom.refresh.RxRefreshView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:crv_refreshEnable="false"
+        app:crv_loadMoreEnable="true"
+        android:id="@+id/refreshView"
+
+        ></com.yunbao.common.custom.refresh.RxRefreshView>
+</LinearLayout>

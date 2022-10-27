@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="150dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/gray1"
+        android:textSize="12sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_dialog_2"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/textColor"
+            android:textSize="13sp"
+            android:minHeight="40dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray4"
+            />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/avatar"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="15dp"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/skill_thumb"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="12dp"
+                />
+
+            <TextView
+                android:id="@+id/skill_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/textColor"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/service_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="80dp"
+                android:textColor="@color/textColor2"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/btn_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="24dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_btn_ghost_1"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/evaluate"
+                android:textColor="@color/global"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="26dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/gray1"
+                android:textSize="13sp"
+                />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

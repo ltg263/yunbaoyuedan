@@ -1,0 +1,118 @@
+apply plugin: 'com.android.library'
+apply from: '../Mob.gradle'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+        ndk {
+            abiFilters "armeabi-v7a","arm64-v8a"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs','../libs'
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    compile rootProject.ext.dependencies["recyclerview-v7"]
+    compile rootProject.ext.dependencies["cardview-v7"]
+    compile rootProject.ext.dependencies["design"]
+    compile rootProject.ext.dependencies["multidex"]
+    compile files('../libs/commons-io-1.4.jar')
+    //okHttp网络请求
+    compile rootProject.ext.dependencies["okhttp"]
+    //OkGo 是对okHttp的封装
+    compile rootProject.ext.dependencies["okgo"]
+    //OkGo上传下载扩展库
+    compile rootProject.ext.dependencies["okserver"]
+    //fastJson解析json
+    compile rootProject.ext.dependencies["fastjson"]
+    //eventbus事件总线
+    compile rootProject.ext.dependencies["eventbus"]
+    //使用Glide加载图片
+    compile rootProject.ext.dependencies["glide"]
+    //一个基于Glide的transformation库,拥有裁剪,着色,模糊,滤镜等多种转换效果
+    compile rootProject.ext.dependencies["glide-transformations"]
+    //带圆角，边框的的ImageView
+    compile rootProject.ext.dependencies["roundedimageview"]
+    //gif库，播放礼物gif用
+    compile rootProject.ext.dependencies["gif-drawable"]
+    //svga播放器
+    compile rootProject.ext.dependencies["SVGAPlayer"]
+    //七牛云存储
+    compile (rootProject.ext.dependencies["qiniu-sdk"]){
+        exclude module: 'okhttp'
+    }
+    //微信sdk,支付登录分享
+    compile rootProject.ext.dependencies["tencent-wechat-sdk"]
+    //腾讯bugly
+    compile rootProject.ext.dependencies["tencent-bugly"]
+    //图片裁剪
+    compile rootProject.ext.dependencies["ucrop"]
+    //轮播图
+    compile rootProject.ext.dependencies["banner"]
+    //鲁班
+    compile rootProject.ext.dependencies["Luban"]
+    //支付宝sdk
+    compile files('libs/alipaySdk-20180601.jar')
+    //腾讯定位，地图sdk
+    compile files('libs/TencentLocationSdk_v6.2.5.3.jar')
+    compile files('libs/TencentMapSDK_1.2.8.1.jar')
+    //下拉刷新上拉加载
+    compile rootProject.ext.dependencies["smartRefreshLayout"]
+    //ViewPager指示器
+    compile rootProject.ext.dependencies["magicIndicator"]
+    //shareSDK
+    compile project(':mob')
+    compile project(':silicompressor')
+    //一个Picker控件，选择日期，城市用
+    compile files('libs/AndroidPicker-1.5.6.jar')
+    //阿里 ARouter
+    compile rootProject.ext.dependencies["arouter"]
+    //流式布局 flowlayout
+    compile rootProject.ext.dependencies["flowlayout"]
+    //compile 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+    //谷歌支付
+    //compile 'com.google.firebase:firebase-messaging:18.0.0'
+    compile 'com.android.billingclient:billing:1.1'
+    //paypal
+    compile 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+
+    compile 'com.android.support.constraint:constraint-layout:1.1.3'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.7'
+    compile 'com.trello.rxlifecycle2:rxlifecycle:2.1.0'
+    compile 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
+    compile 'com.readystatesoftware.chuck:library:1.0.4'
+    compile 'com.lzy.net:okrx2:2.0.2'
+
+
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
+    //亚马逊存储
+    implementation "com.amazonaws:aws-android-sdk-s3:2.16.13"
+    implementation ("com.amazonaws:aws-android-sdk-mobile-client:2.16.13") { transitive = true }
+    compile 'com.sharetrace:sharetrace-android-sdk:2.1.1'
+    compile project(':BaseRecyclerViewAdapterHelper')
+
+}

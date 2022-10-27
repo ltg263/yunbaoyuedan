@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="39dp"
+android:text="@string/speaking_in_turn"
+android:gravity="center"
+android:id="@+id/btn_speak_turn"
+android:button="@null"
+android:textColor="@color/fg_in_turn"
+android:textSize="15dp"
+ />

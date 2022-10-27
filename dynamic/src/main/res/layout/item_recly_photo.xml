@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.yunbao.common.custom.SquareRoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:riv_corner_radius="5dp"
+        android:id="@+id/image_thumb"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="16sp"
+        android:layout_gravity="right"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_black_color_8_radius"
+        android:gravity="center"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+
+        />
+</FrameLayout>

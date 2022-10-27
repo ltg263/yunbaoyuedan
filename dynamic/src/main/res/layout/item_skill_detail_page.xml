@@ -1,0 +1,96 @@
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:id="@+id/vp_skill"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                tools:src="@mipmap/ic_launcher_sys_msg"
+                app:riv_corner_radius="10dp"
+                android:layout_marginLeft="14dp"
+                android:id="@+id/img_skill"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Cuyjku"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_skill_name"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="超级王牌"
+                    android:background="@drawable/bg_color_global_radiu_2"
+                    android:padding="3dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:id="@+id/tv_level"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="12币/局"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"
+                    android:id="@+id/tv_coin"
+                    android:layout_marginTop="3dp"
+                    />
+            </LinearLayout>
+
+            <com.yunbao.common.custom.DrawableTextView
+                android:id="@+id/tv_order_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray5"
+                android:textSize="12sp"
+                app:dt_left_drawable="@mipmap/icon_game_order"
+                app:dt_left_width="13dp"
+                app:dt_left_height="13dp"
+                android:layout_marginRight="10dp"
+                android:drawablePadding="3dp"
+                tools:text="接单 886次" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</FrameLayout>
+

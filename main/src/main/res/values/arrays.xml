@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_tab_home">
+        <item>@mipmap/icon_main_tab_home_00</item>
+        <item>@mipmap/icon_main_tab_home_01</item>
+    </string-array>
+
+    <string-array name="main_tab_dynamic">
+        <item>@mipmap/ic_main_tab_dynamic_01</item>
+        <item>@mipmap/ic_main_tab_dynamic_00</item>
+    </string-array>
+
+    <string-array name="main_tab_croom">
+        <item>@mipmap/icon_main_tab_croom_00</item>
+        <item>@mipmap/icon_main_tab_croom_01</item>
+    </string-array>
+
+    <string-array name="main_tab_msg">
+        <item>@mipmap/icon_main_tab_msg_00</item>
+        <item>@mipmap/icon_main_tab_msg_01</item>
+    </string-array>
+
+
+
+    <string-array name="main_tab_me">
+        <item>@mipmap/icon_main_tab_me_00</item>
+        <item>@mipmap/icon_main_tab_me_01</item>
+    </string-array>
+</resources>

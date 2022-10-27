@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/img_bg"
+        tools:src="@drawable/bound_aval_blue"
+        />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        app:riv_oval="true"
+        android:id="@+id/img_avator"
+        tools:src="@mipmap/ic_launcher_sys_msg"
+        />
+
+    <TextView
+        android:layout_width="29dp"
+        android:layout_height="17dp"
+        android:layout_gravity="right"
+        android:background="@mipmap/icon_reward_default"
+        android:id="@+id/tv_tag"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:textColor="@color/textColor"
+        tools:text="一麦"
+        />
+
+
+</FrameLayout>

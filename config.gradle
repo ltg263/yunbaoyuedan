@@ -1,0 +1,32 @@
+ext {
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.3",
+            minSdkVersion    : 21,
+            targetSdkVersion : 28,
+            versionCode      : 88,
+            versionName      : "3.1.8"
+    ]
+    manifestPlaceholders = [
+
+ 
+            //正式站
+            serverHost       : "http://nideyuming.com",
+
+            //腾讯地图
+            txMapAppKey      : "4UCBZ-TOTS2T-NBBPI",
+            txMapAppSecret   : "MkV8RMHtOlDpY8",
+            
+            //腾讯bugly       update----20200925
+            buglyAppId       : "3dc3f",
+
+            //sharetraceAppKey
+            sharetraceKey    : "cc89f42f1f",
+
+
+            MobAppKey        : "348b98e",
+            MobAppSecret     : "8624494f8a252aae6b",
+
+    ]
+
+}

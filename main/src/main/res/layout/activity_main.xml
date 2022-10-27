@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawlayout">
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        >
+        <com.yunbao.common.custom.MyViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            app:canScroll="false"
+            />
+
+        <FrameLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray2"
+                />
+
+            <com.yunbao.common.custom.TabButtonGroup
+                android:id="@+id/tab_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <com.yunbao.common.custom.TabButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:tbn_checked="true"
+                    app:tbn_icon_array_id="@array/main_tab_home"
+                    app:tbn_icon_size="24dp"
+                    app:tbn_text_color_checked="@color/global"
+                    app:tbn_text_color_unchecked="@color/gray1"
+                    app:tbn_text_size="11sp"
+                    app:tbn_tip="@string/main_home"
+                    />
+                <com.yunbao.common.custom.TabButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:tbn_checked="false"
+                    app:tbn_icon_array_id="@array/main_tab_dynamic"
+                    app:tbn_icon_size="24dp"
+                    app:tbn_text_color_checked="@color/global"
+                    app:tbn_text_color_unchecked="@color/gray1"
+                    app:tbn_text_size="11sp"
+                    app:tbn_tip="@string/dynamic"
+                    />
+
+                <com.yunbao.common.custom.TabButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:tbn_icon_array_id="@array/main_tab_croom"
+                    app:tbn_icon_size="24dp"
+                    app:tbn_text_color_checked="@color/global"
+                    app:tbn_text_color_unchecked="@color/gray1"
+                    app:tbn_text_size="11sp"
+                    app:tbn_tip="@string/chat_room_2"
+                    />
+
+
+                <com.yunbao.common.custom.TabButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:tbn_icon_array_id="@array/main_tab_msg"
+                    app:tbn_icon_size="24dp"
+                    app:tbn_text_color_checked="@color/global"
+                    app:tbn_text_color_unchecked="@color/gray1"
+                    app:tbn_text_size="11sp"
+                    app:tbn_tip="@string/im_msg"
+                    />
+
+                <com.yunbao.common.custom.TabButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:tbn_icon_array_id="@array/main_tab_me"
+                    app:tbn_icon_size="24dp"
+                    app:tbn_text_color_checked="@color/global"
+                    app:tbn_text_color_unchecked="@color/gray1"
+                    app:tbn_text_size="11sp"
+                    app:tbn_tip="@string/main_me"
+                    />
+            </com.yunbao.common.custom.TabButtonGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:includeFontPadding="false"
+                >
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    />
+
+                <TextView
+                    android:id="@+id/red_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_red_point"
+                    android:gravity="center"
+                    android:minWidth="14dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    tools:text="123"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:visibility="invisible"
+                    android:translationX="4dp"
+                    android:translationY="-13dp"
+                    />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+          </FrameLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="@dimen/draw_layout_width"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="end"
+        android:id="@+id/drawlayout_container"
+        ></FrameLayout>
+
+</android.support.v4.widget.DrawerLayout>
+

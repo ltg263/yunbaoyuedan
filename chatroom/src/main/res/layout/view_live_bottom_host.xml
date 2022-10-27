@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:maxHeight="50dp"
+    tools:background="@color/black1"
+    >
+
+    <ImageView
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:padding="3dp"
+        android:src="@mipmap/icon_live_chat"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="@dimen/default_padding"
+        android:id="@+id/btn_chat"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:textColor="#959595"
+        android:textSize="15dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/default_padding"
+        android:gravity="center_vertical"
+        />
+
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/wheat_control"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/btn_wheat_control"
+        />
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btn_mike_apply"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@mipmap/icon_mike_apply"
+            />
+        <View
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/bg_red_point"
+            android:layout_gravity="right"
+            android:id="@+id/v_red_point"
+            android:layout_margin="5dp"
+            android:visibility="invisible"
+            />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        >
+
+        <ImageView
+            android:id="@+id/btn_msg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@mipmap/icon_live_msg" />
+
+        <TextView
+            android:id="@+id/red_point"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_alignTop="@id/btn_msg"
+            android:layout_alignRight="@id/btn_msg"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_red_point"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:minWidth="14dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:translationY="-4dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:src="@mipmap/icon_btn_share"
+        android:layout_marginRight="5dp"
+        android:id="@+id/btn_share"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="3dp"
+        android:src="@mipmap/icon_gift"
+        android:id="@+id/btn_gift"
+        android:layout_marginRight="10dp"
+        />
+
+
+</LinearLayout>

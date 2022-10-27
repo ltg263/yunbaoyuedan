@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+        <include layout="@layout/view_title"/>
+        <View style="@style/line1" />
+        <LinearLayout style="@style/flash_order_item_style"
+            android:id="@+id/ll_category"
+            android:onClick="toAllSkill"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/order_detail_skill"
+                android:layout_weight="1"
+                style="@style/flash_order_textview" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="和平精英"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:hint="@string/game_edit_choose"
+                android:textColorHint="@color/gray1"
+                android:id="@+id/tv_category"
+                />
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/icon_arrow_right"
+                />
+        </LinearLayout>
+
+        <View style="@style/line1" />
+
+        <LinearLayout style="@style/flash_order_item_style"
+            android:id="@+id/ll_level"
+            >
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="@string/level"
+                style="@style/flash_order_textview" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <com.yunbao.common.custom.FlowRadioDataGroup
+                android:id="@+id/fr_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                app:horizontal_Space="10dp"
+                />
+        </LinearLayout>
+        <View style="@style/line1" />
+        <LinearLayout style="@style/flash_order_item_style"
+            android:id="@+id/ll_sex"
+            >
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="@string/sex"
+                style="@style/flash_order_textview" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            <com.yunbao.common.custom.FlowRadioDataGroup
+                android:id="@+id/fr_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="right"
+                app:horizontal_Space="10dp"
+                app:isFull="false"
+                app:vertical_Space="10dp"/>
+        </LinearLayout>
+
+        <View style="@style/line1" />
+        <LinearLayout style="@style/flash_order_item_style"
+            android:id="@+id/ll_order_time"
+            android:onClick="selTime"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:layout_weight="1"
+                style="@style/flash_order_textview" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sel_time"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/tv_order_time"
+                />
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/icon_arrow_right"
+                />
+        </LinearLayout>
+
+        <View style="@style/line1" />
+        <LinearLayout style="@style/flash_order_item_style"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/order_order_num"
+                android:layout_weight="1"
+                style="@style/flash_order_textview" />
+
+            <TextView
+                android:id="@+id/btn_decrease"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/gray4"
+                android:gravity="center"
+                android:text="-"
+                android:onClick="numReduce"
+                android:textColor="@color/fg_btn_order_count"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/order_num_1"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/gray4"
+                android:gravity="center"
+                android:minWidth="36dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                tools:text="1"
+                android:textColor="@color/textColor"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/btn_increase"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@color/gray4"
+                android:gravity="center"
+                android:text="+"
+                android:onClick="numAdd"
+                android:textColor="@color/fg_btn_order_count"
+                android:textSize="18sp"
+                />
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/icon_arrow_right"
+                />
+        </LinearLayout>
+
+        <View style="@style/line1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/order_des"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            style="@style/flash_order_textview" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+
+            <EditText
+                android:id="@+id/tv_des"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:hint="@string/order_des_hint"
+                android:textColorHint="@color/gray3"
+                android:textSize="13sp"
+                android:maxLength="50"
+                android:gravity="left"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:textColor="@color/gray1"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/tv_des"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="5dp"
+                android:text="988/88"
+                />
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/btn_order"
+            android:layout_width="match_parent"
+            android:enabled="false"
+            android:onClick="confirm"
+            android:text="@string/publish"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            style="@style/normal_button_style" />
+    </LinearLayout>
+
+</ScrollView>
+
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <com.yunbao.common.custom.DrawableTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dt_top_height="30dp"
+        app:dt_top_width="30dp"
+        android:textSize="13sp"
+        android:drawablePadding="4dp"
+        android:layout_gravity="center"
+        android:textColor="@color/global"
+        android:id="@+id/draw_text_view"
+        />
+
+</FrameLayout>
+

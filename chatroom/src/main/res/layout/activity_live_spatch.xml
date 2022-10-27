@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootView"
+    android:background="@color/black1"
+    tools:context=".ui.activity.LiveActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:src="@mipmap/bg_live_room"
+        android:scaleType="centerCrop"
+        android:id="@+id/img_room_cover"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="@dimen/live_avator_top"
+        >
+        <include layout="@layout/item_live_title"/>
+        <include layout="@layout/view_dispatch_host"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/seat_height"
+            android:id="@+id/vp_seat_container"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:layout_marginRight="150dp"
+                android:id="@+id/recly_chat"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:id="@+id/vp_bottom"
+                android:layout_gravity="bottom"
+                ></FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:id="@+id/btn_order_tip"
+        android:background="@drawable/bg_btn_primary"
+        android:textSize="11dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="@dimen/default_margin"
+        android:paddingLeft="@dimen/default_padding"
+        android:translationX="300dp"
+        android:paddingRight="@dimen/default_padding"
+        android:text="@string/new_order_tip"
+        />
+
+    <FrameLayout
+        android:id="@+id/vp_gift_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+
+
+</FrameLayout>

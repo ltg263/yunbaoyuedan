@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="310dp"
+    android:layout_height="310dp"
+   android:background="@drawable/bg_color_white_radius_10"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:text="@string/chat_charge_pay_type"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="9dp"
+        android:layout_gravity="right"
+        android:id="@+id/img_close"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/icon_close_bold"
+        />
+</FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="15云币"
+        android:textColor="@color/gray1"
+        android:textSize="11sp"
+        android:layout_marginTop="7dp"
+        android:id="@+id/tv_coin"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="¥15"
+        android:textColor="@color/textColor"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_realy_price"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="@string/chat_charge_pay"
+        android:textColor="@color/global"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:id="@+id/btn_commit"
+        />
+</LinearLayout>
